@@ -116,8 +116,12 @@ Source paths are relative to `--workspace`. The download/audit commands above as
 
 The distribution is `adcs-tex-cpp-extractor`, the import namespace is `adcs_tex_cpp`, and the installed command is `adcs-tex-cpp-extract`. Alternatively, `python -I worker.py` reads one `adcs.extraction.v1` JSON request from stdin and emits one response. Use the source checkout for engine integration; the wheel does not include the manifest, retrieval profile, corpora, or Gist cache.
 
-## Development and license
+## Development
 
 GitHub Actions runs the standalone regression suite with Python 3.12. GitLab CI is retained for mirrors. The parser and symbol normalization originated from the Words plugin; legacy synthetic fixture names are not claims about TeX SDK APIs. Official TeX fixtures test TeX content separately. The retrieval profile has no Words-specific ranking rules or namespace exclusions.
 
-See [extraction notes](docs/extraction-notes.md). Historical records do not establish current ingestion. Licensed under [MIT](LICENSE), preserving Aspose attribution; downloaded sources retain their upstream terms. No ingestion or publication is performed by the unit tests.
+See [extraction notes](docs/extraction-notes.md). Historical records do not establish current ingestion. No ingestion or publication is performed by the unit tests.
+
+## License and provenance
+
+[MIT License](LICENSE). Derived from the [Words/C++ extraction plugin](https://github.com/aspose-words-mcp/cpp-plugin), with the original copyright notice preserved. Fixture origins and revisions are documented in [tests/fixtures/README.md](tests/fixtures/README.md). Downloaded documentation and examples retain their upstream terms and attribution.
